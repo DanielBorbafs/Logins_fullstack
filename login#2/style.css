@@ -32,10 +32,11 @@ body {
     bottom: 0;
     left: 0;
     z-index: 1;
+   
 }
 .logozin img{
   
-    width: 354px;
+    width: 100%
 }
 
 .title-screen{
@@ -44,7 +45,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
     align-items: center;
     text-align: center;
     height: 400px;
@@ -61,6 +61,10 @@ body {
     margin-top: 1rem;
 }
 
+.btn-register:hover{
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
 
 .right-screen {
     display: flex;
@@ -97,6 +101,8 @@ body {
     margin-top: 1rem;
     margin-left: 4rem;
 }
+
+
 .btn-login button{
     height: 40px;
     width: 200px;
@@ -107,16 +113,21 @@ body {
     color: #fff;
 }
 
+.btn-logar:hover{
+    background-color: rgb(0, 0, 0);
+    border: 0.8px solid #b3b3b362;
+}
+
+
 .modal {
-    display: none;
-    position: fixed;
+   
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
 }
-  
+
 .modal-content {
     position: absolute;
     top: 50%;
@@ -135,3 +146,62 @@ body {
     cursor: pointer;
 }
   
+.modal-content {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    
+}
+
+.user{
+    flex-direction: column;
+    
+}
+
+.password{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-register{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.card-register input{
+    width: 350px;
+}
+
+.btn-registrar{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn-registrar button{
+    padding: 8px;
+    width: 120px;
+}
+
+.input-register input {
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(245, 243, 240, 0.808);
+}
+
+label {
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.btn-registrar button {
+    padding: 8px;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    background-color:  #6B2E87;
+    color: #fff;
+}
