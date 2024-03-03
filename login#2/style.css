@@ -1,207 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-h1, p, h2 {
-    color: #fff;
-}
-body {
-    font-family: Montserrat;
-}
-
-.login-screen {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-
-.login-center{
-    display: flex;
-    justify-content: center;
-}
-.left-screen {
-    position: relative;
-    height: 600px;
-    background-color: #6B2E87;
-    border-radius: 6px 0px 0px 6px;
-}
-
-.logozin{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-   
-}
-.logozin img{
-  
-    width: 100%
-}
-
-.title-screen{
-    margin-top: 60px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 400px;
-}
-
-.btn-register{
-    color: #fff;
-    border: 1px solid #ffffff62;
-    border-radius: 8px;
-    height: 40px;
-    padding: 4px;
-    width: 200px;
-    background-color:  #6B2E87;
-    margin-top: 1rem;
-}
-
-.btn-register:hover{
-    background-color: rgb(0, 0, 0);
-    border: none;
-}
-
-.right-screen {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    align-items: center;
-    border-radius: 0px 6px 6px 0px;
-}
-
-.title-login-screen{
-    margin-top: 9.5rem;
-    margin-left: 4rem;
-    text-align: center;
-}
-
-.inputs {
-    margin-left: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 2rem;
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-}
-
-.inputs input{
-    width: 350px;
-    height: 40px;
-    border: none;
-    padding: 8px;
-    border-radius: 6px;
-}
-
-.btn-login{
-    margin-top: 1rem;
-    margin-left: 4rem;
-}
-
-
-.btn-login button{
-    height: 40px;
-    width: 200px;
-    border: none;
-    border-radius: 6px;
-    margin-top: 1.4rem;
-    background-color:  #6B2E87;
-    color: #fff;
-}
-
-.btn-logar:hover{
-    background-color: rgb(0, 0, 0);
-    border: 0.8px solid #b3b3b362;
-}
-
-
-.modal {
-   
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-}
-  
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-  
-.modal-content {
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    width: 500px;
-    height: 500px;
-    justify-content: center;
+    <title>Document</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container login-screen">
+        <div class="row login-center ">
+            <div class="col-xl-3 left-screen ">
+                <div class="title-screen">
+                    <h1>Olá, seja bem vindo<br>de volta!</h1>
+                    <p>Faça o login ou registre-se abaixo</p> 
+                    <button id="openModalBtn" class="btn-register">Registrar-se</button>                   
+                </div>
+                <div class="logozin">
+                    <img src="../login01/imgs/poly.svg" alt="">
+                    
+                </div>
+            </div>
+            <div class="col-xl-5 right-screen">
+                <div class="title-login-screen">
+                    <h2>Entre com suas<br> credenciais</h2>
+                </div>
+                <div class="inputs">
+                    <div class="username">
+                        <input type="text" name="" id="" placeholder="username">
+                    </div>
+                    <div class="password">
+                        <input type="password" name="" id="" placeholder="password">
+                    </div>
+                   
+                </div>
+                <div class="btn-login">
+                    <button class="btn-logar"> Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>    
     
-}
 
-.user{
-    flex-direction: column;
-    
-}
 
-.password{
-    display: flex;
-    flex-direction: column;
-}
 
-.card-register{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="myModal" class="modal">
+    <div class=" container modal-content">
+        <div class="row d-flex modalzinho">
+            <div class="col-xl-12  card-register">
+                
+                <span class="close" id="closeModalBtn">&times;</span>
+                
+                <div class="input-register">
+                    <div class="user d-flex">
+                        <label>Escolha um login</label>
+                        <input type="text">
+                    </div>
+                    <div class="password mt-4">
+                        <label>Escolha uma senha</label>
+                        <input type="password">
+                    </div>
+                    <div class="password mt-4">
+                        <label> Repita a senha</label>
+                        <input type="password">
+                    </div>
+                    <div class="btn-registrar">
+                        <button>teste</button>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
    
-}
-.card-register input{
-    width: 350px;
-}
+  </div>
 
-.btn-registrar{
-    margin-top: 2rem;
-    text-align: center;
-}
 
-.btn-registrar button{
-    padding: 8px;
-    width: 120px;
-}
-
-.input-register input {
-    height: 40px;
-    border-radius: 2px;
-    border: none;
-    background-color: rgba(245, 243, 240, 0.808);
-}
-
-label {
-    color: #fff;
-    margin-bottom: 4px;
-}
-
-.btn-registrar button {
-    padding: 8px;
-    width: 180px;
-    border: none;
-    border-radius: 5px;
-    background-color:  #6B2E87;
-    color: #fff;
-}
+    <script src="main.js"></script>
+</body>
+</html>
