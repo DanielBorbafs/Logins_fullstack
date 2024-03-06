@@ -15,7 +15,7 @@ async function tratarDados() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ username, password }),
-            mode: "cors",
+            mode: 'cors',
         });
 
         const data = await response.json();
@@ -23,8 +23,14 @@ async function tratarDados() {
         // Exibindo a resposta no console do navegador
         console.log(data);
 
-        // Exibindo a resposta no HTML
-        document.getElementById('response').innerText = JSON.stringify(data, null, 2);
+        // Verificar se a autenticação foi bem-sucedida e se há uma indicação de redirecionamento
+        if (data.success && data.redirect) {
+            // Redirecionar para a página desejada
+            window.location.href = data.redirect;
+        } else {
+            // Exibindo a resposta no HTML
+            document.getElementById('response').innerText = JSON.stringify(data, null, 2);
+        }
     } catch (error) {
         console.error('Erro ao enviar solicitação:', error);
     }
