@@ -11,7 +11,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     height: 800px;
 }
 
@@ -21,33 +21,35 @@
     flex-direction: column;
     padding: 20px;
     height: 800px;
-    background-color:#1D9BF0;
+    background-color: #1D9BF0;
 }
-.left-login{
+
+.left-login {
     display: flex;
     justify-content: space-between;
 }
-.img-bg{
+
+.img-bg {
     position: absolute;
-    margin-top: 140px;
+    margin-top: 200px;
     margin-left: 3rem;
     width: 100%;
     object-fit: cover;
-   
+
 }
 
-.subtitle-left{
+.subtitle-left {
     margin-left: 60px;
 }
 
-.left-login h1{
+.left-login h1 {
     margin-left: 55px;
     margin-top: 80px;
     font-size: 40px;
     color: #fff;
 }
 
-.left-login p{
+.left-login p {
     font-size: 20px;
     color: #fff;
 
@@ -58,7 +60,7 @@
     object-fit: cover;
 }
 
-.copy{
+.copy {
     font-size: 16px;
     color: #fff;
     text-align: center;
@@ -74,10 +76,12 @@
     align-items: center;
     justify-content: space-around;
 }
-.icon img{ 
+
+.icon img {
     height: 30px;
 }
-.top-text p{
+
+.top-text p {
     margin-top: 1rem;
 }
 
@@ -86,11 +90,11 @@
     margin-left: 5.5rem;
 }
 
-.title-right-login h1{
+.title-right-login h1 {
     font-size: 40px;
 }
 
-.title-right-login p{
+.title-right-login p {
     font-size: 20px;
 }
 
@@ -98,6 +102,7 @@ input {
     width: 400px;
     height: 50px;
 }
+
 .inputs {
     width: 580px;
     display: flex;
@@ -111,17 +116,17 @@ input {
     margin-top: 4px;
     width: 490px;
     text-align: end;
-  
+
 }
 
-.btn-login{
+.btn-login {
     display: flex;
     justify-content: center;
     max-width: 500px;
     margin-left: 2.6rem;
 }
 
-.btn-login button{
+.btn-login button {
     font-size: 16px;
     padding: 8px;
     height: 60px;
@@ -134,7 +139,7 @@ input {
 
 
 
-.line{
+.line {
     width: 70px;
     height: 1px;
     background-color: black;
@@ -144,7 +149,7 @@ input {
     display: flex;
     align-items: center;
     gap: 8px;
-    
+
     justify-content: center;
     width: 400px;
     margin-left: 5.8rem;
@@ -155,22 +160,23 @@ input {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    
+
 }
 
-.btn-social button{
+.btn-social button {
     height: 40px;
 }
 
-.google{
+.google {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 
 }
-.google button{
-    background-color:#E7EAEE;
+
+.google button {
+    background-color: #E7EAEE;
     border: none;
     width: 220px;
     height: 50px;
@@ -180,7 +186,7 @@ input {
     font-weight: 500;
 }
 
-.google  img{
+.google img {
     height: 20px;
 
 }
@@ -190,8 +196,8 @@ input {
     height: 25px;
 }
 
-.apple button{
-    background-color:#020202;
+.apple button {
+    background-color: #020202;
     color: #fff;
     border: none;
     width: 210px;
@@ -202,7 +208,7 @@ input {
     font-weight: 500;
 }
 
-.apple{
+.apple {
     display: flex;
     align-items: center;
     gap: 10px;
