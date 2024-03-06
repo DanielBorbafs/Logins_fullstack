@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: poppins;
+}
+
+
+
+.login-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 700px;
+    background-color: #1D9BF0;
+}
+
+.left-login {
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+}
+
+.img-bg {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 3rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.subtitle-left {
+    margin-left: 60px;
+}
+
+.left-login h1 {
+    margin-left: 55px;
+    margin-top: 80px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.left-login p {
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.left-login img {
+    max-width: 500px;
+    object-fit: cover;
+}
+
+.copy {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.right-login {
+    background-color: #fff;
+    height: 700px;
+}
+
+.top-text {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon img {
+    height: 30px;
+}
+
+.top-text p {
+    margin-top: 1rem;
+}
+
+.title-right-login {
+    margin-top: 1rem;
+    margin-left: 5.5rem;
+}
+
+.title-right-login h1 {
+    font-size: 40px;
+}
+
+.title-right-login p {
+    font-size: 20px;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+}
+
+.inputs {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.forgot {
+    margin-top: 4px;
+    width: 490px;
+    text-align: end;
+
+}
+
+.btn-login {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin-left: 2.6rem;
+}
+
+.btn-login button {
+    font-size: 16px;
+    padding: 8px;
+    height: 60px;
+    width: 400px;
+    background-color: #1D9BF0;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
+
+
+.line {
+    width: 70px;
+    height: 1px;
+    background-color: black;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    justify-content: center;
+    width: 400px;
+    margin-left: 5.8rem;
+}
+
+.btn-social {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.btn-social button {
+    height: 40px;
+}
+
+.google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.google button {
+    background-color: #E7EAEE;
+    border: none;
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.google img {
+    height: 20px;
+
+}
+
+.apple img {
+    margin-left: 0.8rem;
+    height: 25px;
+}
+
+.apple button {
+    background-color: #020202;
+    color: #fff;
+    border: none;
+    width: 210px;
+    height: 50px;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.apple {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

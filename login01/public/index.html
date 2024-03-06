@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login #01</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container login-screen">
+        <div class="row">
+            <div class=" col-lg-6 col-md-6 left-login">
+                <div class="section-1">
+                    <h1>Veja oque<br> está acontecendo agora</h1>
+                    <p class="subtitle-left">Inscreva-se no Twitter hoje mesmo</p>
+
+                </div>
+                <img src="./img/socials.svg" alt="" class="img-bg ">
+                <div class="copy">
+                    <small>@ 2022, Twitter, inc</small>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 right-login">
+                <div class="top-text">
+                    <div class="icon">
+                        <img src="#" alt="">
+                    </div>
+                    <p>Não tem uma conta? <span>Inscreva-se</span></p>
+                </div>
+                <div class="title-right-login">
+                    <h1>Descubra oque <br>está em alta</h1>
+                    <p>Entre no Twitter</p>
+                </div>
+                <form onsubmit="tratarDados(); return false" method="POST">
+                    <div class="inputs">
+                        <input type="text" placeholder="Celular, e-mail ou nome de usuário" id="username">
+                        <input type="password" placeholder="Digite sua senha" id="password">
+                    </div>
+                </form>
+                <div class="forgot">
+                    <p>Esqueceu sua senha?</p>
+                </div>
+
+                <div class="btn-login">
+                    <button onclick="tratarDados()">Conecte-se agora</button>
+                </div>
+                <div class="divider">
+                    <div class="line"></div>
+                    <small>ou</small>
+                    <div class="line"></div>
+                </div>
+                <div class="btn-social">
+                    <div class="google">
+                        <button class="google"><img src="#" alt="">Entrar com o Google </button>
+                    </div>
+                    <div class="apple">
+
+                        <button class="apple"><img src="#" alt="">Entrar com Apple</button>
+                    </div>
+                </div>
+            </div>
+            <div id="response"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
